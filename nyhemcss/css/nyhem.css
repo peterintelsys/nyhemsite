@@ -1,0 +1,172 @@
+.meny-container {
+	padding: 20px 0;
+	border-bottom: 3px solid #F3573B;
+}
+
+.meny-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.meny-top a {
+	color:#273336;
+}
+
+.meny-top a:hover {
+	color:#F3573B;
+	text-decoration: underline;
+}
+
+
+.left-meny a {
+	font-size: 24px;
+	
+}
+
+.show {
+	display:flex;
+}
+
+.hide{
+	display: none;
+}
+
+.hide-big a {
+	font-size: 24px;
+}
+
+.hide-big a:hover {
+	text-decoration: none;
+}
+
+.hide-small {
+	display: none;
+}
+
+.top-dropdown {
+	display: none;
+	flex-direction: column;
+	border-right:1px solid grey;
+	border-left:1px solid grey;
+	border-bottom:1px solid grey;
+}
+
+.top-dropdown a {
+	color:#273336;
+	padding: 7px 12px;
+}
+
+.top-dropdown a:hover {
+	background-color: #273336;
+	color:white;
+}
+
+.mygrid {
+	display: block;
+	margin-top: 40px;
+}
+
+.card {
+	background-color: #ffffff;
+	border:0 solid grey;
+	border-radius: 8px;
+	box-shadow: 5px 5px 3px #bfbfbf;
+	margin-bottom: 20px;
+}
+
+.card-header {
+	padding: 20px;
+	font-size: 20px;
+	font-style: bold;
+	letter-spacing: 2px;
+}
+
+.card-content {
+	padding: 0 20px 30px 20px;
+}
+
+.footer {
+	background-color: #273336;
+	padding:40px;
+	border:1px solid #068587;
+	border-radius: 8px;
+	color:white;
+	font-size: 14px;
+}
+
+.footer-column {
+	display: block;
+	text-align: center;
+
+}
+
+.my-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #e6e6e6;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 16px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #273336;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #F3573B;
+  text-decoration: underline;
+}
+
+@media (min-width: 70rem) {
+
+.right-meny a {
+	padding-left: 20px;
+}
+
+.test a{
+	display: inline-block;
+}
+
+.hide-small {
+	display: block;
+}
+
+.hide-big {
+	display: none;
+}
+
+.mygrid {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-column-gap: 20px;
+}
+
+.footer-column {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	text-align: center;
+
+}
+
+}
